@@ -237,7 +237,7 @@ def _set_minimisation_constraints(
         constraints.append(UGE(max_calldata_size, transaction.call_data.calldatasize))
 
         # Minimize
-        minimize.append(transaction.call_data.calldatasize)
+        # minimize.append(transaction.call_data.calldatasize)
         minimize.append(transaction.call_value)
         constraints.append(
             UGE(
